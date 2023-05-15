@@ -23,7 +23,7 @@ From Command Prompt (cmd.exe) run:
 > :: Override defaults with vars
 > set CYGWININSTALLDIR="C:\cygwin"
 > :: MSVC 2005
-> set VSINSTALLDIR=C:\PROGRA~2\Microsoft Visual Studio 8
+> set VSINSTALLDIR="C:\PROGRA~2\Microsoft Visual Studio 8"
 > set VS2022INSTALLDIR="C:\PROGRA~1\Microsoft Visual Studio\2022\Enterprise"
 > set MINGW64INSTALLDIR="C:\msys64"
 > [path_to_this_repo]\build_all
