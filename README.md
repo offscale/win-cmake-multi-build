@@ -65,6 +65,20 @@ To populate and execute `gh release upload` to upload the first-level .zip files
 > [path_to_this_repo]\release_to_gh
 ```
 
+## Environment setup
+
+### MinGW
+From MSYS run:
+```
+# 64-bit
+$ pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-ninja
+# 32-bit
+$ pacman -S --needed base-devel mingw-w64-i686-cmake mingw-w64-i686-toolchain mingw-w64-i686-ninja
+```
+
+### OpenWatcom
+Ensure you clear the `INCLUDE` env var as this adversely impacts vcvarshall.bat from MSVC 2005 and 2022.
+
 ---
 
 #### License
