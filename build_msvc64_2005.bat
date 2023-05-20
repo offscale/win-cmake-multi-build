@@ -4,7 +4,7 @@ set OLD_PATH=%PATH%
 IF NOT DEFINED VSINSTALLDIR (
   set VSINSTALLDIR="C:\PROGRA~2\Microsoft Visual Studio 8"
 )
-call %VSINSTALLDIR%"\VC\vcvarsall.bat" "x64"
+call %VSINSTALLDIR%"\VC\vcvarsall.bat" x64
 
 set build_dir="%cd%\build_msvc64_2005"
 IF EXIST "%build_dir%" rd /s /q "%build_dir%"
