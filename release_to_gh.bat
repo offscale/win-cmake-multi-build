@@ -10,3 +10,5 @@ for /f "tokens=*" %%G in ('dir /b /s /a:d "%cd%\build_*"') do  for /f "tokens=*"
 )
 
 gh release upload "%RELEASE_TAG%" %release_archives%
+
+set RELEASE_TAG=
